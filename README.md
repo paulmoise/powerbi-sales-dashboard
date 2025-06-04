@@ -1,23 +1,22 @@
-
 # 📊 Sales Performance Dashboard — Power BI Project
 
-##  Quick Overview
+## 🔍 Quick Overview
 
 This project showcases a complete end-to-end **business intelligence solution** developed with **Power BI** for a fictional B2B company, *GoodSales*. The goal was to design a **fully interactive dashboard** for executive decision-making using real-world business datasets (clients, products, sales, teams, and geography).
 
 We built a **star schema model**, integrated multiple sources, and developed rich visuals to analyze **sales**, **margins**, **top clients**, **regional performance**, and **manager efficiency**.
 
-🔗 **Report PDF**: [Rapport\_Power\_BI.pdf](./Rapport_Power_BI%20%282%29.pdf)
+🔗 **Report PDF**: [Rapport_Power_BI.pdf](./Rapport_Power_BI%20%282%29.pdf)
 
 ---
 
-##  Key Objectives
+## 🧠 Key Objectives
 
-* Import and model multiple tables using Power BI's data model.
-* Design a **star schema** centered on the `SalesOrders` fact table.
-* Provide **KPI-driven insights**: sales, margin, growth, order volume.
-* Offer **dynamic filtering** across year, region, manager, and client.
-* Build dashboards to support **client segmentation** and **sales strategy** decisions.
+- Import and model multiple tables using Power BI's data model.
+- Design a **star schema** centered on the `SalesOrders` fact table.
+- Provide **KPI-driven insights**: sales, margin, growth, order volume.
+- Offer **dynamic filtering** across year, region, manager, and client.
+- Build dashboards to support **client segmentation** and **sales strategy** decisions.
 
 ---
 
@@ -33,52 +32,47 @@ We built a **star schema model**, integrated multiple sources, and developed ric
 
 ---
 
-##  Data Modeling
+## 🧩 Data Modeling
 
-* Implemented a **star schema**:
+- Implemented a **star schema**:
+  - **Fact table**: `SalesOrders`
+  - **Dimension tables**: `Customers`, `Items`, `Regions`, `SalesTeam`, and calendar date
+- Established clear **1-to-many relationships**
+- Created a **ManagersTable** to isolate unique manager info
 
-  * **Fact table**: `SalesOrders`
-  * **Dimension tables**: `Customers`, `Items`, `Regions`, `SalesTeam`, and calendar date
-* Established clear **1-to-many relationships**
-* Created a **ManagersTable** to isolate unique manager info
+📌 Key Metric Calculations:
 
- Key Metric Calculations:
-
-* `Total Sales`, `Total Margin`, `Average Order Value`
-* `Year-over-Year Growth`
-* Margins by product, region, and manager
+- `Total Sales`, `Total Margin`, `Average Order Value`
+- `Year-over-Year Growth`
+- Margins by product, region, and manager
 
 ---
 
 ## 📈 Dashboard Pages
 
 ### 1. **Sales Overview**
-
-* KPIs: Total Sales (104.85M), Margin (43.25M), Avg Order (3.61K), Growth (67.78%)
-* Visuals: sales by region, year-quarter evolution, monthly trend
+- KPIs: Total Sales (104.85M), Margin (43.25M), Avg Order (3.61K), Growth (67.78%)
+- Visuals: sales by region, year-quarter evolution, monthly trend
 
 ### 2. **Client Analysis**
-
-* Top 10 profitable clients
-* Sales and margin heatmap
-* Sales quantity correlation and distribution
-* Drill-through with filters: year, quarter, region
+- Top 10 profitable clients
+- Sales and margin heatmap
+- Sales quantity correlation and distribution
+- Drill-through with filters: year, quarter, region
 
 ### 3. **Manager Performance**
-
-* Bar charts: sales & margin by manager
-* TreeMap: sales contribution per representative
-* Detailed performance table
+- Bar charts: sales & margin by manager
+- TreeMap: sales contribution per representative
+- Detailed performance table
 
 ### 4. **Regional Margins**
-
-* Interactive map of margin by geography
-* Insights on best-performing regions
-* Europe and North America dominate margin distribution
+- Interactive map of margin by geography
+- Insights on best-performing regions
+- Europe and North America dominate margin distribution
 
 ---
 
-##  Stack Used
+## 🧰 Stack Used
 
 | Tool       | Usage                              |
 | ---------- | ---------------------------------- |
@@ -89,11 +83,30 @@ We built a **star schema model**, integrated multiple sources, and developed ric
 
 ---
 
-##  Improvement Ideas
+## 🌱 Improvement Ideas
 
-* Add supplier tables for deeper supply chain insights
-* Integrate sales targets to benchmark performance
-* Use machine learning (e.g., forecasting trends)
-* Add seasonality and goal tracking dashboards
+- Add supplier tables for deeper supply chain insights
+- Integrate sales targets to benchmark performance
+- Use machine learning (e.g., forecasting trends)
+- Add seasonality and goal tracking dashboards
+
+---
+
+## 🖼️ Dashboard Previews
+
+### Page 1 — Sales Overview
+![Sales Overview](images/341ab336-bd37-4b9e-b4ed-6ed5ccb48fad-1.png)
+
+### Page 2 — Client Analysis
+![Client Analysis](images/341ab336-bd37-4b9e-b4ed-6ed5ccb48fad-2.png)
+
+### Page 3 — Product Performance
+![Product Performance](images/341ab336-bd37-4b9e-b4ed-6ed5ccb48fad-3.png)
+
+### Page 4 — Manager & Team Performance
+![Manager Performance](images/341ab336-bd37-4b9e-b4ed-6ed5ccb48fad-4.png)
+
+### Page 5 — Margin by Region (Map)
+![Regional Margin Map](images/341ab336-bd37-4b9e-b4ed-6ed5ccb48fad-5.png)
 
 ---
